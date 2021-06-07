@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	:root{
+		--u: 10px;
+		--border: #333;
+		--muted: #777;
+	}
+	.range-slider-1{
+		-webkit-appearance: none;
+		appearance: none;
+		width: 300px;
+		height: calc(var(--u) * 4);
+		background: #ccc; 
+		outline: none; 
+		padding: 0;
+		overflow: hidden;
+		cursor: ew-resize;
+		border-radius: 5px !important;
+	}
+		.range-slider-1:focus{
+			border-radius: 5px !important;
+		}
+		.range-slider-1::-webkit-slider-thumb {
+			-webkit-appearance: none; 
+			appearance: none;
+			height: calc(var(--u) * 4); 
+			width: 40px; 
+			border-radius: 5px !important;
+			background: var(--muted);
+			cursor: ew-resize;
+			border: none;
+			box-shadow: -407px 0 0 400px var(--border); 
+		}
+	}
+</style>
+</head>
+<body>
+	<form action="" method="post">
+		<div class="input-box">
+			<label for="text-size">Logo</label>
+			<div class="input-group">
+				<input type="range" class="input-small range-slider-1" value="0" min="0" max="100">
+				<p class="logo-size-value">Small</p>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
